@@ -16,6 +16,11 @@ import java.io.PrintWriter;
 public class MyServlet2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // TODO: 2019/4/23 实现对应的后台逻辑
+        String id=req.getParameter("id");
+        String uid=req.getParameter("uid");
+        System.out.println(id);
+        System.out.println(uid);
         resp.sendRedirect("/index2.jsp");
     }
 
